@@ -1,3 +1,3 @@
 const path = require('path');
 
-module.exports = path.dirname(process); //process is global
+module.exports = path.dirname(process.mainModule.filename); //process is global
